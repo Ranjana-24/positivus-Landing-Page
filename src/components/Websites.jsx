@@ -7,13 +7,13 @@ import zoom from "../assets/websites/zoom.png";
 export default function Websites() {
   return (
     <>
-      <figure className="h-12 flex mt-70 flex-wrap gap-12 items-center md:mt-2 md:flex-row md:gap-20 space-between ">
-        <img src={amazon} className="w-31 h-7 brightness-0"></img>
-        <img src={dribble} className="w-31 h-7"></img>
-        <img src={hubspot} className="w-31 h-7 brightness-0"></img>
-        <img src={notion} className="w-31 h-7"></img>
-        <img src={netflix} className="w-31 h-7 brightness-0"></img>
-        <img src={zoom} className="w-31 h-7 brightness-0"></img>
+      <figure className="h-12 flex mt-70 flex-wrap gap-12 items-center md:mt-2 md:flex-row md:gap-20 space-between  ">
+        <img src={amazon} className="w-31 h-12 brightness-0"></img>
+        <img src={dribble} className="w-31 h-12"></img>
+        <img src={hubspot} className="w-31 h-12 brightness-0"></img>
+        <img src={notion} className="w-31 h-12"></img>
+        <img src={netflix} className="w-31 h-12 brightness-0"></img>
+        <img src={zoom} className="w-31 h-12 brightness-0"></img>
       </figure>
     </>
   );
