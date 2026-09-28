@@ -1,6 +1,6 @@
-import Logo from "../assets/logo.jpg";
+import Logo from "../assets/Logo.jpg";
 import Navdata from "../data/Navdata";
-import Button from "../ui/button";
+import Button from "../ui/Button";
 
 export default function Navbar() {
   return (

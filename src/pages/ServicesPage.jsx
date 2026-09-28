@@ -1,8 +1,10 @@
-import Sections from "../components/Sections";
+import Sections from "../components/TopBar";
+import Services from "../components/Services";
 export default function ServicesPage() {
   return (
     <>
-      <Sections index={0} />
+      <Sections  />
+      <Services />
     </>
   );
 }
