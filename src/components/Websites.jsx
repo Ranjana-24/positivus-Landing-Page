@@ -9,15 +9,15 @@ export default function Websites() {
     <>
       <div className="w-full">
         <figure
-          className="flex  mt-10 md:mt-20 flex-wrap gap-12 
-      items-center flex-col md:flex-row md:gap-20 space-between  "
+          className="flex  mt-10 md:mt-20 flex-wrap gap-5 
+      items-center  md:flex-row md:gap-20  "
         >
-          <img src={amazon} className="w-31 h-12 brightness-0"></img>
-          <img src={dribble} className="w-31 h-12"></img>
-          <img src={hubspot} className="w-31 h-12 brightness-0"></img>
-          <img src={notion} className="w-31 h-12"></img>
-          <img src={netflix} className="w-31 h-12 brightness-0"></img>
-          <img src={zoom} className="w-31 h-12 brightness-0"></img>
+          <img src={amazon} className=" w-28 h-10 md:w-31 md:h-12 brightness-0"></img>
+          <img src={dribble} className="w-28 h-10 md:w-31 md:h-12"></img>
+          <img src={hubspot} className="w-28 h-10 md:w-31 md:h-12 brightness-0"></img>
+          <img src={notion} className="w-28 h-10 md:w-31 md:h-12"></img>
+          <img src={netflix} className="w-28 h-10 md:w-31 md:h-12 brightness-0"></img>
+          <img src={zoom} className="w-28 h-10 md:w-31 md:h-12 brightness-0"></img>
         </figure>
       </div>
     </>

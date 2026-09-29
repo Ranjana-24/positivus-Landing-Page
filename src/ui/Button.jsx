@@ -1,6 +1,7 @@
 const variants = {
   blank: "bg-white text-[#191A23] hover:bg-[#191A23] hover:text-white",
   filled: "bg-[#191A23] text-white hover:bg-white hover:text-[#191A23]",
+  green:"bg-[#B9FF66] text-black"
 };
 
 export default function Button({

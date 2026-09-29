@@ -6,6 +6,8 @@ import WorkingProcessPage from "./pages/WorkingProcessPage";
 import CaseStudiesPage from "./pages/CaseStudiesPage";
 import TeamPage from "./pages/TeamPage";
 import TestimonialPage from "./pages/TestimonialPage";
+import ContactPage from "./pages/ContactPage";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -17,6 +19,8 @@ function App() {
         <WorkingProcessPage />
         <TeamPage />
         <TestimonialPage />
+        <ContactPage />
+        <Footer />
       </Layout>
     </>
   );

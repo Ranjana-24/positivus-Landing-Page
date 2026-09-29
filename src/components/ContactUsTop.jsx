@@ -1,5 +1,5 @@
 import SectionsData from "../data/TopBar";
-export default function TopBar() {
+export default function ContactUsTop() {
   return (
     <>
       <section
@@ -11,15 +11,15 @@ export default function TopBar() {
             className="font-['Space_Grotesk'] font-medium text-[28px] md:text-[40px] 
           leading-[100%] bg-[#B9FF66] text-center  rounded-[7px] md:items-center"
           >
-            {SectionsData[4].title}
+            {SectionsData[5].title}
           </h2>
         </div>
         <div>
           <p
             className="w-full max-w-145  font-['Space_Grotesk'] font-normal 
-          text-base sm:text-xlleading-[100%] "
+          size-5 leading-[100%] "
           >
-            {SectionsData[4].description}
+            {SectionsData[5].description}
           </p>
         </div>
       </section>

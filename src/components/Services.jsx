@@ -12,14 +12,14 @@ export default function Services() {
         <ServiceBoxVariant
           key={service.name}
           variant={service.variant}
-          className="grid h-[310px] w-full  grid-cols-1 md:grid-cols-2 rounded-[45px] border border-black px-6 py-6"
+          className="grid h-77  w-full  grid-cols-1 md:grid-cols-2 rounded-[45px] border border-black px-6 py-6"
         >
           {/* LEFT SIDE */}
           <div className="flex flex-col justify-between py-1">
             {/* Service title */}
-            <h2 className="text-[24px] leading-[1.1]">
+            <h2 className=" text-[18px] md:text-[24px] leading-[1.1]">
               <span
-                className={`rounded-[7px] bg-[#B9FF66] px-1 
+                className={`rounded-[7px] bg-[#B9FF66]  
         ${
           service.variant === "green"
             ? "bg-white text-black"
