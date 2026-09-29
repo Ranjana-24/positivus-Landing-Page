@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 
 export default function Navbar() {
   return (
-    <nav className="mt-5 w-full">
+    <nav className="mt-5 w-full h-17">
       <div className="flex items-center justify-between cursor-pointer">
         {/* logo */}
         <figure className="flex items-center">

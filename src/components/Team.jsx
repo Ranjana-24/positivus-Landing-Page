@@ -3,8 +3,7 @@ import Button from "../ui/Button";
 export default function Team() {
   return (
     <>
-      <section className="max-w-[1441px] mx-auto mt-10  px-5">
-        
+      <section className="w-full  mt-10  px-5">
         {/* Team Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] ">
           {TeamData.map((team) => (
@@ -14,42 +13,34 @@ export default function Team() {
             >
               {/* Profile */}
               <div className="flex flex-row gap-10 border-b-2  ">
-                
                 {/* Image */}
-                <div className="">
-                  <img
-                    src={team.image}
-                    alt={team.name}
-                  />
+                <div>
+                  <img src={team.image} alt={team.name} />
                 </div>
 
                 {/* Name and Title */}
                 <div className="mt-8">
-                  <h3 className="">
-                    {team.name}
-                  </h3>
+                  <h3 className="">{team.name}</h3>
 
-                  <p className="">
-                    {team.title}
-                  </p>
+                  <p className="">{team.title}</p>
                 </div>
               </div>
 
               {/* Content */}
-              <div className="mt-16" >
-                <p >
-                  {team.content}
-                </p>
+              <div className="mt-16">
+                <p>{team.content}</p>
               </div>
-            
             </div>
-           
           ))}
         </div>
         <div className="flex justify-end mt-3">
-           <Button className="w-[269px] h-17 rounded-[14px] font-[Space_Grokset]
-           font-normal text-[20xl]">see all team</Button>
-           </div>
+          <Button
+            className="w-[269px] h-17 rounded-[14px] font-[Space_Grokset]
+           font-normal text-[20xl]"
+          >
+            see all team
+          </Button>
+        </div>
       </section>
     </>
   );
