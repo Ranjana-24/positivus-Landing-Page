@@ -3,7 +3,7 @@ import plusIcon from "../assets/plusIcon.png";
 
 export default function WorkingProcess() {
   return (
-    <section className="max-w-358 mt-10 h-280">
+    <section className="w-full mt-10 h-280">
       {WorkingProcessData.map((process) => (
         <div
           key={process.head}
