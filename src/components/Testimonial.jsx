@@ -1,43 +1,57 @@
+import Slick from "react-slick";
+import carouselSettings from "./Carousel";
 import TestimonialData from "../data/TestimonialData";
 
+const Slider = Slick.default || Slick;
+
 export default function Testimonial() {
-    return (
-        <section className="w-full bg-[#191A23] text-white h-156 rounded-[45px] mt-10 overflow-hidden">
+  return (
+    <section className="w-full bg-[#191A23] text-white h-120 md:h-156 rounded-[45px] mt-10">
 
-            <div className="flex gap-10 p-20 w-max">
+      <Slider {...carouselSettings}>
 
-                {TestimonialData.map((testimonial) => (
-                    <div key={testimonial.content} className="w-151">
+        {TestimonialData.map((testimonial, index) => (
+          <div key={index} className="px-2 sm:px-3">
 
-                        {/* Testimonial Box */}
-                        <div className="w-151 h-66
-                            border border-[#B9FF66]
-                            rounded-[45px]
-                            px-13 py-12
-                            font-[Space-Grotesk]">
+            {/* Complete testimonial */}
+            <div className="w-full max-w-151 mx-auto ">
 
-                            <p className="text-[18px] font-normal leading-[1.35]">
-                                {testimonial.content}
-                            </p>
+              {/* Testimonial Box */}
+              <div
+                className="
+                  w-full md:w-125 h-60
+                  border border-[#B9FF66]
+                  rounded-[45px]
+                  px-6 sm:px-8 md:px-13 
+                  py-8 md:py-12
+                  font-[Space-Grotesk]
+                  md:mt-25
+                  mt-15
+                "
+              >
+                <p className="text-[18px] font-normal leading-[100%] h-full fit-content">
+                  {testimonial.content}
+                </p>
+              </div>
 
-                        </div>
+              {/* Author */}
+              <div className="ml-8 sm:ml-12 md:ml-20 mt-10 font-[Space-Grotesk]">
+                <h4 className="text-[#B9FF66] text-[18px]">
+                  John Smith
+                </h4>
 
-                        {/* Author */}
-                        <div className="ml-20 mt-10 font-[Space-Grotesk]">
-                            <h4 className="text-[#B9FF66] text-[18px]">
-                                John Smith
-                            </h4>
-
-                            <p className="text-[18px]">
-                                Marketing Director at XYZ Corp
-                            </p>
-                        </div>
-
-                    </div>
-                ))}
+                <p className="text-[18px]">
+                  Marketing Director at XYZ Corp
+                </p>
+              </div>
 
             </div>
 
-        </section>
-    );
+          </div>
+        ))}
+
+      </Slider>
+
+    </section>
+  );
 }
