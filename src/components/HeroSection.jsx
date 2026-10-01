@@ -7,14 +7,14 @@ export default function HeroSection() {
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 items-center">
           <div>
             <h1
-              className="font['Space_Grotesk'] mt-1 md:mt-8 font-medium max-w-[531px] 
+              className="font-space mt-1 md:mt-8 font-medium max-w-[531px] 
              text-[38px] leading-[50px] md:text-[60px] md:leading-[60px] mb-2 md:mb-3
              "
             >
               Navigating the digital landscape for success
             </h1>
             <p
-              className="max-w-132  md:h-28 font-['Space_Grotesk'] 
+              className="max-w-132  md:h-28 font-space
             font-normal text-[20px] leading-7"
             >
               Our digital marketing agency helps businesses grow and succeed
@@ -22,7 +22,7 @@ export default function HeroSection() {
               media marketing, and content creation.
             </p>
             <Button variant="filled" className="mt-6 sm:mt-7 md:mt-7">
-              Book a consualtion
+              Book a consulation
             </Button>
           </div>
           <figure>

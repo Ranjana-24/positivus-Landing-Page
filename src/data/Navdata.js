@@ -13,7 +13,7 @@ const Navdata = [
   },
   {
     name: "Blog"
-  }
+  },
 ];
 
 export default Navdata;

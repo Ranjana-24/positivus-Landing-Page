@@ -21,11 +21,11 @@ export default function WorkingProcess() {
             
             {/* Title */}
             <div className="flex items-center gap-6">
-              <p className="hidden md:block font-[Space_Grotesk] font-medium text-3xl md:text-6xl leading-none">
+              <p className="hidden md:block font-space font-medium text-3xl md:text-6xl leading-none">
                 {process.head}
               </p>
 
-              <p className="font-[Space_Grotesk] font-medium text-2xl md:text-3xl leading-none">
+              <p className="font-space font-medium text-2xl md:text-3xl leading-none">
                 {process.title}
               </p>
             </div>
@@ -58,7 +58,7 @@ export default function WorkingProcess() {
           {/* Detailed */}
           {open === index && (
             <div className="mt-6 border-t border-gray-400 pt-6">
-              <p className="font-[Space_Grotesk] text-lg md:text-xl max-w-4xl">
+              <p className="font-space text-lg md:text-xl max-w-4xl">
                 {process.description}
               </p>
             </div>

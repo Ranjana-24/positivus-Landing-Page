@@ -12,13 +12,13 @@ function App() {
   return (
     <>
       <Layout>
-        <HeroPage />
-        <ServicesPage />
+        <HeroPage  />
+        <ServicesPage  />
         <ThingHappenPage />
         <CaseStudiesPage />
-        <WorkingProcessPage />
-        <TeamPage />
-        <TestimonialPage />
+        <WorkingProcessPage  />
+        <TeamPage  />
+        <TestimonialPage  />
         <ContactPage />
         <Footer />
       </Layout>

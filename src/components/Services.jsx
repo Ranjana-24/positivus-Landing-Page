@@ -17,9 +17,9 @@ export default function Services() {
           {/* LEFT SIDE */}
           <div className="flex flex-col justify-between py-1">
             {/* Service title */}
-            <h2 className=" text-[18px] md:text-[24px] leading-[1.1]">
+            <h2 className=" text-[18px] md:text-[24px] leading-[1.31] font-space ">
               <span
-                className={`rounded-[7px] bg-[#B9FF66]  
+                className={`rounded-[7px] bg-[#B9FF66] px-1  
         ${
           service.variant === "green"
             ? "bg-white text-black"
@@ -42,7 +42,7 @@ export default function Services() {
             >
               <img src={Icon} alt="learn more" className="h-[28px] w-[28px]" />
 
-              <p className="text-[12px] md:text-[16px]">Learn more</p>
+              <p className="text-[12px] md:text-[16px] font-space">Learn more</p>
             </div>
           </div>
 

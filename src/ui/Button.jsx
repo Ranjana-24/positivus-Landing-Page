@@ -12,7 +12,7 @@ export default function Button({
   return (
     <button
       className={`w-57 h-17 rounded-[14px] border pt-5 pr-9 pb-5 pl-9 leading-[100%] text-center 
-        font-['Space_Grotesk'] cursor-pointer ${variants[variant]} ${className}`}
+       font-space cursor-pointer ${variants[variant]} ${className}`}
     >
       {children}
     </button>

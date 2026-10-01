@@ -10,20 +10,20 @@ export default function Contact() {
           {/* Checkbox */}
           <div className="flex gap-8 mb-8">
             <div className="flex items-center gap-2">
-              <input type="checkbox" />
-              <label>Say Hi</label>
+              <input type="radio" />
+              <label className="font-space">Say Hi</label>
             </div>
 
             <div className="flex items-center gap-2">
-              <input type="checkbox" />
-              <label>Get a Quote</label>
+              <input type="radio" />
+              <label className="font-space">Get a Quote</label>
             </div>
           </div>
 
           {/* Form */}
           <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-2">
-              <label>Name</label>
+              <label className="font-space">Name</label>
               <input
                 type="text"
                 placeholder="Name"
@@ -31,8 +31,8 @@ export default function Contact() {
               />
             </div>
 
-            <div className="flex flex-col gap-2">
-              <label>Email</label>
+            <div className="flex flex-col gap-2 font-space">
+              <label className="font-space">Email</label>
               <input
                 type="email"
                 placeholder="Email"
@@ -40,8 +40,8 @@ export default function Contact() {
               />
             </div>
 
-            <div className="flex flex-col gap-2">
-              <label>Message</label>
+            <div className="flex flex-col gap-2 font-space">
+              <label className="font-space">Message</label>
               <textarea
                 placeholder="Message"
                 className="border rounded-lg p-3 h-32"
@@ -53,7 +53,7 @@ export default function Contact() {
         </form>
 
         {/* Right bar */}
-        <div className="hidden justify-end md:flex items-center">
+        <div className="hidden justify-end md:flex items-center ">
           <img src={star} alt="star" className="w-173 h-162 mt-5 " />
         </div>
       </div>

@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-8 cursor-pointer">
           {Navdata.map((data) => (
             <ul key={data.name}>
-              <li>{data.name}</li>
+              <li className="font-space">{data.name}</li>
             </ul>
           ))}
 
@@ -32,7 +32,7 @@ export default function Navbar() {
 
         {/* hamburger */}
         <button
-          className="block lg:hidden"
+          className="block lg:hidden text-3xl"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <ImCancelCircle /> : <GiHamburgerMenu />}
@@ -48,7 +48,7 @@ export default function Navbar() {
         >
           {Navdata.map((data) => (
             <ul key={data.name}>
-              <li className="text-lg lg:text-xl">{data.name}</li>
+              <li className="text-lg lg:text-xl font-space">{data.name}</li>
             </ul>
           ))}
         </div>
