@@ -12,16 +12,16 @@ export default function Footer() {
       <nav className="mt-2 md:mt-3 w-full">
         <div className="flex items-center justify-between cursor-pointer px-2 sm:px-4 md:px-6">
           {/* logo */}
-          <figure className="flex items-center">
+          <figure className="flex">
             <img
               src={Logo}
               alt="logo"
-              className="w-28 sm:w-32 md:w-36 lg:w-40"
+              className="w-28 sm:w-32 sm:mt-2 md:w-36 lg:w-40"
             />
           </figure>
 
           {/* nav links */}
-          <div className="flex flex-col md:flex-row gap-3 md:gap-8 underline">
+          <div className="flex flex-col md:flex-row gap-3 md:gap-8 underline ">
             {Navdata.map((data) => (
               <ul key={data.name}>
                 <li className="font-space">{data.name}</li>
@@ -83,7 +83,8 @@ export default function Footer() {
       <hr className="border-gray-500" />
 
       {/* bottom */}
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-0 p-4 text-gray-400 text-center md:mt-13">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-2 
+      sm:gap-0 p-4 text-gray-400 text-center md:mt-13">
         <p className="sm:pr-5 text-sm sm:text-base font-space">
           © 2023 Positivus. All Rights Reserved.
         </p>

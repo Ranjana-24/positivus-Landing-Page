@@ -9,7 +9,7 @@ export default function ContactUsTop() {
         <div>
           <h2
             className="font-space font-medium text-[28px] md:text-[40px] 
-          leading-[100%] bg-[#B9FF66] text-center  rounded-[7px] md:items-center px-1"
+          leading-[100%] bg-[#B9FF66] text-center  rounded-[7px] md:items-center px-1 "
           >
             {SectionsData[5].title}
           </h2>
@@ -17,7 +17,7 @@ export default function ContactUsTop() {
         <div>
           <p
             className="w-full max-w-145  font-space font-normal 
-          size-5 leading-[100%] "
+          size-5 leading-[100%] md:pt-2"
           >
             {SectionsData[5].description}
           </p>

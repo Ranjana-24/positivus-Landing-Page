@@ -3,8 +3,8 @@ import arrow from "../assets/arrow.png";
 
 export default function CaseStudies() {
   return (
-    <section className="px-4 sm:px-6 md:px-8 lg:px-10">
-      <div className="w-full mt-10 h-auto rounded-[45px] bg-[#191A23]">
+    <section className="px-3 sm:px-6 md:px-8 lg:px-10">
+      <div className="w-full w-302 mt-10 h-auto rounded-[45px] bg-[#191A23]">
         <div className="grid grid-cols-1 md:grid-cols-3">
           {CaseStudiesData.map((study, index) => (
             <div

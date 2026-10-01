@@ -42,6 +42,7 @@
 const carouselSettings = {
   className: "center",
   dots: true,
+  dotsClass: "slick-dots",
   infinite: true,
   speed: 500,
   slidesToShow: 1,
