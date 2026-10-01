@@ -5,10 +5,8 @@ export default function Contact() {
   return (
     <section className="w-full h-auto rounded-[45px] bg-[#F3F3F3] mt-10">
       <div className="grid grid-cols-1 md:grid-cols-2">
-
         {/* Left bar */}
         <form className="p-6 md:p-10">
-
           {/* Checkbox */}
           <div className="flex gap-8 mb-8">
             <div className="flex items-center gap-2">
@@ -55,12 +53,8 @@ export default function Contact() {
         </form>
 
         {/* Right bar */}
-        <div className="hidden md:flex justify-end items-center">
-          <img
-            src={star}
-            alt="star"
-            className="w-173 h-162 mt-5 "
-          />
+        <div className="hidden justify-end md:flex items-center">
+          <img src={star} alt="star" className="w-173 h-162 mt-5 " />
         </div>
       </div>
     </section>

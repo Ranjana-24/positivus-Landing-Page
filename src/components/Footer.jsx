@@ -11,7 +11,6 @@ export default function Footer() {
       {/* top */}
       <nav className="mt-2 md:mt-3 w-full">
         <div className="flex items-center justify-between cursor-pointer px-2 sm:px-4 md:px-6">
-          
           {/* logo */}
           <figure className="flex items-center">
             <img
@@ -33,21 +32,9 @@ export default function Footer() {
           {/* icons */}
           <figure className="hidden lg:block">
             <div className="flex flex-row gap-2">
-              <img
-                src={facebook}
-                alt="facebook"
-                className="w-5 h-5"
-              />
-              <img
-                src={twitter}
-                alt="twitter"
-                className="w-5 h-5"
-              />
-              <img
-                src={linkedin}
-                alt="linkedin"
-                className="w-5 h-5"
-              />
+              <img src={facebook} alt="facebook" className="w-5 h-5" />
+              <img src={twitter} alt="twitter" className="w-5 h-5" />
+              <img src={linkedin} alt="linkedin" className="w-5 h-5" />
             </div>
           </figure>
         </div>
@@ -56,7 +43,6 @@ export default function Footer() {
       {/* middle section */}
       <div className="mt-8 sm:mt-10 flex justify-center">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center p-3 sm:p-5 md:p-10">
-
           {/* left */}
           <div className="w-full flex flex-col text-gray-400">
             <h3 className="bg-[#B9FF66] w-31 h-7 text-center rounded mb-3 text-black">
@@ -67,9 +53,7 @@ export default function Footer() {
               Email: info@positivus.com
             </p>
 
-            <p className="pb-2 text-sm sm:text-base">
-              Phone: 555-567-8901
-            </p>
+            <p className="pb-2 text-sm sm:text-base">Phone: 555-567-8901</p>
 
             <p className="pb-2 text-sm sm:text-base">
               Address: 1234 Main St
@@ -80,12 +64,12 @@ export default function Footer() {
 
           {/* right */}
           <div className="w-full flex items-start md:justify-end">
-            <div className="bg-[#191A23] w-full max-w-125 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 rounded-2xl p-4">
-              <Button variant="filled" className="w-full sm:w-auto">
+            <div className="bg-[#191A23] w-auto md:w-full max-w-125 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 rounded-2xl p-4">
+              <Button variant="filled" className="md:w-full ">
                 Email
               </Button>
 
-              <Button variant="green" className="w-full sm:w-auto">
+              <Button variant="green" className="md:w-full">
                 Subscribe to news
               </Button>
             </div>
@@ -102,9 +86,7 @@ export default function Footer() {
           © 2023 Positivus. All Rights Reserved.
         </p>
 
-        <p className="text-sm sm:text-base">
-          Privacy Policy
-        </p>
+        <p className="text-sm sm:text-base">Privacy Policy</p>
       </div>
     </footer>
   );
