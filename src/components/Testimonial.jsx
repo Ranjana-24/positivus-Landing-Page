@@ -23,7 +23,7 @@
 //                   w-full md:w-125 h-60
 //                   border border-[#B9FF66]
 //                   rounded-[45px]
-//                   px-6 sm:px-8 md:px-13 
+//                   px-6 sm:px-8 md:px-13
 //                   py-8 md:py-12
 //                   font-[Space-Grotesk]
 //                   md:mt-25
@@ -56,10 +56,6 @@
 //     </section>
 //   );
 // }
-
-
-
-
 
 // //2
 // import React, { Component } from "react";
@@ -101,7 +97,6 @@
 
 // export default CenterMode;
 
-
 //3
 import Slick from "react-slick";
 import carouselSettings from "./Carousel";
@@ -114,15 +109,13 @@ export default function Testimonial() {
     <section
       className="
         w-full bg-[#191A23] text-white rounded-[45px] mt-10 h-120 sm:h-125 md:h-130
-        lg:h-140 overflow-hidden slider-container
+        lg:h-140  slider-container
       "
     >
       <Slider {...carouselSettings}>
         {TestimonialData.map((testimonial, index) => (
           <div key={index} className="px-3">
-            
             <div className="flex flex-col items-center">
-
               {/* Testimonial Box */}
               <div
                 className="
@@ -155,9 +148,7 @@ export default function Testimonial() {
                   Marketing Director at XYZ Corp
                 </p>
               </div>
-
             </div>
-
           </div>
         ))}
       </Slider>

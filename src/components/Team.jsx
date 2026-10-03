@@ -10,7 +10,7 @@ export default function Team() {
             <div
               key={team.name}
               className="border border-b-4 w-full h-auto md:h-83 rounded-[45px] items-center p-7"
-            > 
+            >
               {/* Profile */}
               <div className="flex flex-row gap-10   ">
                 {/* Image */}
@@ -35,7 +35,7 @@ export default function Team() {
         </div>
         <div className="flex  md:justify-end lg:justify-end mt-3">
           <Button
-            className="w-67 h-12 md:h-17 rounded-[14px] font-space
+            className=" w-full lg:w-67 h-12 md:h-17 rounded-[14px] font-space
            font-normal text-[20xl]"
           >
             See all team

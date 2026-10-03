@@ -8,7 +8,7 @@ export default function TopBar() {
       >
         <div>
           <h2
-            className="font-space font-medium text-[28px] md:text-[40px] 
+            className="font-space font-medium text-[28px] md:text-[40px] px-1
           leading-[100%] bg-[#B9FF66]  rounded-[7px] "
           >
             {SectionsData[4].title}

@@ -16,7 +16,7 @@ export default function TopBar() {
         </div>
         <div>
           <p
-            className="w-full max-w-145  font-space font-normal 
+            className="w-full max-w-145 h-auto font-space font-normal 
           text-base sm:text-xl leading-[100%] "
           >
             {SectionsData[3].description}

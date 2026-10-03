@@ -6,13 +6,14 @@ export default function Services() {
   return (
     <div
       className="mx-auto mt-10 grid w-full grid-cols-1 md:grid-cols-2 
-    gap-[40px] px-5"
+    gap-10 px-5"
     >
       {ServiceData.map((service) => (
         <ServiceBoxVariant
           key={service.name}
           variant={service.variant}
-          className="grid h-77  w-full  grid-cols-1 md:grid-cols-2 rounded-[45px] border border-black px-6 py-6"
+          className="grid h-77  w-full  grid-cols-1 md:grid-cols-2 rounded-[45px] border border-black
+          border-b-4 px-6 py-6"
         >
           {/* LEFT SIDE */}
           <div className="flex flex-col justify-between py-1">
@@ -33,16 +34,18 @@ export default function Services() {
 
             {/* Learn more */}
             <div
-              className={`flex items-center gap-2 mt-2
+              className={`flex items-center gap-2 mt-2 cursor-pointer
               ${
                 service.variant === "green" || service.variant === "white"
                   ? " text-black"
                   : " text-white"
               }`}
             >
-              <img src={Icon} alt="learn more" className="h-[28px] w-[28px]" />
+              <img src={Icon} alt="learn more" className="h-7 w-7" />
 
-              <p className="text-[12px] md:text-[16px] font-space">Learn more</p>
+              <p className="text-[12px] md:text-[16px] font-space ">
+                Learn more
+              </p>
             </div>
           </div>
 

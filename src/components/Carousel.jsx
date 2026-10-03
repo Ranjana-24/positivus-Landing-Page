@@ -35,9 +35,6 @@
 
 // export default carouselSettings;
 
-
-
-
 //2
 const carouselSettings = {
   className: "center",

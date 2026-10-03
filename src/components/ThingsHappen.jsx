@@ -18,15 +18,17 @@ export default function ThingsHappen() {
               Let’s make things happen
             </h3>
 
-            <p className="max-w-125 font-space font-normal leading-[100%] 
-            pt-5 text-[16px] md:text-[18px]">
+            <p
+              className="max-w-125 font-space font-normal leading-[100%] 
+            pt-5 text-[16px] md:text-[18px]"
+            >
               Contact us today to learn more about how our digital marketing
               services can help your business grow and succeed online.
             </p>
 
             <Button
               variant="filled"
-              className="w-full  h-10 md:h-15 mt-5 md:mt-3 rounded-[14px] pt-3 "
+              className="w-auto  h-10 md:h-15 mt-5 md:mt-5 rounded-[14px] pt-4 "
             >
               Get your free proposal
             </Button>

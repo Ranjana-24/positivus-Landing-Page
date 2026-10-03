@@ -16,7 +16,7 @@ export default function TopBar() {
         </div>
         <div>
           <p
-            className="w-full max-w-145  font-space font-normal 
+            className="w-full h-auto max-w-145  font-space font-normal 
           size-5 leading-[100%] flex-wrap"
           >
             {SectionsData[0].description}

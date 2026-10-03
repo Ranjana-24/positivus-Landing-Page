@@ -9,7 +9,7 @@
 //     <>
 //       <div className="w-full">
 //         <figure
-//           className="flex  mt-10 md:mt-20 flex-wrap gap-5 md:gap-10 lg:gap-20 
+//           className="flex  mt-10 md:mt-20 flex-wrap gap-5 md:gap-10 lg:gap-20
 //       items-center  md:flex-row   "
 //         >
 //           <img
@@ -35,7 +35,6 @@
 //     </>
 //   );
 // }
-
 
 // //2
 // import amazon from "../assets/websites/amazon.png";
@@ -69,7 +68,7 @@
 //       <Slider {...settings}>
 //            <div className="w-full">
 //          <figure
-//            className="flex  mt-10 md:mt-20 flex-wrap gap-5 md:gap-10 lg:gap-20 
+//            className="flex  mt-10 md:mt-20 flex-wrap gap-5 md:gap-10 lg:gap-20
 //        items-center  md:flex-row   "
 //          >
 //            <img
@@ -96,7 +95,6 @@
 //       </section>
 //   )}
 
-
 //3
 import amazon from "../assets/websites/amazon.png";
 import dribble from "../assets/websites/dribble.png";
@@ -106,7 +104,7 @@ import netflix from "../assets/websites/netflix.png";
 import zoom from "../assets/websites/zoom.png";
 import Slick from "react-slick";
 
-const Slider = Slick.default || Slick
+const Slider = Slick.default || Slick;
 
 function AutoPlay() {
   const settings = {
@@ -115,9 +113,26 @@ function AutoPlay() {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
+    speed: 4000,
     autoplaySpeed: 2000,
-    cssEase: "linear"
+    cssEase: "linear",
+
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="slider-container">
@@ -126,13 +141,13 @@ function AutoPlay() {
           <img src={amazon}></img>
         </div>
         <div>
-         <img src={dribble}></img>
+          <img src={dribble}></img>
         </div>
         <div>
-         <img src={hubspot} className="brightness-0"></img>
+          <img src={hubspot} className="brightness-0"></img>
         </div>
         <div>
-         <img src={notion}></img>
+          <img src={notion}></img>
         </div>
         <div>
           <img src={netflix} className="brightness-0"></img>
@@ -142,7 +157,6 @@ function AutoPlay() {
         </div>
       </Slider>
     </div>
-    
   );
 }
 

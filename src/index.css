@@ -21,3 +21,13 @@
 @theme {
   --font-space: "Space Grotesk", sans-serif;
 }
+
+.slider-container .slick-dots li button:before {
+  color: white;
+  opacity: 1;
+}
+
+.slider-container .slick-dots li.slick-active button:before {
+  color: #B9FF66;
+  opacity: 1;
+}

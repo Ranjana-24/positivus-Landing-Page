@@ -9,19 +9,19 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white rounded-4xl w-full h-auto p-3 mb-5 mt-15 md:mt-20">
       {/* top */}
-      <nav className="mt-2 md:mt-3 w-full">
-        <div className="flex items-center justify-between cursor-pointer px-2 sm:px-4 md:px-6">
+      <nav className="mt-2 md:mt-3 w-full sm:items-start">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between cursor-pointer px-2 sm:px-4 md:px-6">
           {/* logo */}
           <figure className="flex">
             <img
               src={Logo}
               alt="logo"
-              className="w-28 sm:w-32 sm:mt-2 md:w-36 lg:w-40"
+              className="w-28 sm:w-32  md:w-36 lg:w-40"
             />
           </figure>
 
           {/* nav links */}
-          <div className="flex flex-col md:flex-row gap-3 md:gap-8 underline ">
+          <div className="flex  flex-col md:flex-row gap-3 md:gap-8 underline sm:pt-2 ">
             {Navdata.map((data) => (
               <ul key={data.name}>
                 <li className="font-space">{data.name}</li>
@@ -42,8 +42,10 @@ export default function Footer() {
 
       {/* middle section */}
       <div className="mt-8 sm:mt-10 flex justify-center">
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center p-3 
-        sm:p-5 md:p-10">
+        <div
+          className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center p-3 
+        sm:p-5 md:p-10"
+        >
           {/* left */}
           <div className="w-full flex flex-col text-gray-400">
             <h3 className="bg-[#B9FF66] w-31 h-7 text-center rounded mb-3 text-black font-space">
@@ -54,7 +56,9 @@ export default function Footer() {
               Email: info@positivus.com
             </p>
 
-            <p className="pb-2 text-sm sm:text-base font-space">Phone: 555-567-8901</p>
+            <p className="pb-2 text-sm sm:text-base font-space">
+              Phone: 555-567-8901
+            </p>
 
             <p className="pb-2 text-sm sm:text-base font-space">
               Address: 1234 Main St
@@ -65,8 +69,10 @@ export default function Footer() {
 
           {/* right */}
           <div className="w-full flex items-start md:justify-end">
-            <div className="bg-[#191A23] w-auto md:w-full max-w-125 flex flex-col
-             sm:flex-row  sm:items-center gap-3 rounded-2xl p-4">
+            <div
+              className="bg-[#191A23] w-auto  md:w-full max-w-125 flex flex-col
+             sm:flex-row  sm:items-center gap-3 rounded-2xl p-4"
+            >
               <Button variant="filled" className="md:w-full ">
                 Email
               </Button>
@@ -83,8 +89,10 @@ export default function Footer() {
       <hr className="border-gray-500" />
 
       {/* bottom */}
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-2 
-      sm:gap-0 p-4 text-gray-400 text-center md:mt-13">
+      <div
+        className="flex flex-col sm:flex-row justify-center items-center gap-2 
+      sm:gap-0 p-4 text-gray-400 text-center md:mt-13"
+      >
         <p className="sm:pr-5 text-sm sm:text-base font-space">
           © 2023 Positivus. All Rights Reserved.
         </p>

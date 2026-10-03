@@ -29,7 +29,7 @@ export default function HeroSection() {
             <img
               src={illustration}
               alt="illustration"
-              className="w-full max-w-[600px] h-auto mt-8"
+              className="w-full max-w-150 h-auto mt-8"
             />
           </figure>
         </div>
