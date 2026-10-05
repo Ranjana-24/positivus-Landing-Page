@@ -35,11 +35,7 @@ export default function Services() {
             {/* Learn more */}
             <div
               className={`flex items-center gap-2 mt-2 cursor-pointer
-              ${
-                service.variant === "green" || service.variant === "white"
-                  ? " text-black"
-                  : " text-white"
-              }`}
+              ${service.variant === "black" ? " text-white" : " text-black"}`}
             >
               <img src={Icon} alt="learn more" className="h-7 w-7" />
 

@@ -3,7 +3,6 @@ import plusIcon from "../assets/plusIcon.png";
 import { useState } from "react";
 import minusIcon from "../assets/minusIcon.png";
 
-
 export default function WorkingProcess() {
   const [open, setOpen] = useState(null);
 
@@ -13,12 +12,11 @@ export default function WorkingProcess() {
         <div
           key={index}
           className={`w-full rounded-[45px] border border-b-4 mb-5 px-10 py-8 ${
-  open === index ? "bg-[#B9FF66]" : "bg-[#F3F3F3]"
-}`}
+            open === index ? "bg-[#B9FF66]" : "bg-[#F3F3F3]"
+          }`}
         >
           {/* Header */}
           <div className="w-full flex items-center justify-between">
-            
             {/* Title */}
             <div className="flex items-center gap-6">
               <p className="hidden md:block font-space font-medium text-3xl md:text-6xl leading-none">
@@ -33,13 +31,16 @@ export default function WorkingProcess() {
             {/* Plus Icon */}
             <button>
               {open === index ? (
-                <img src={minusIcon} alt="minus"
+                <img
+                  src={minusIcon}
+                  alt="minus"
                   className="w-8 h-8 cursor-pointer"
                   onClick={() => setOpen(null)}
                 />
               ) : (
                 <img
-                  src={plusIcon} alt="plus"
+                  src={plusIcon}
+                  alt="plus"
                   className="w-8 h-8 cursor-pointer"
                   onClick={() => setOpen(index)}
                 />
